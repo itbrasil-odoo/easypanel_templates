@@ -486,6 +486,16 @@
     ]
   },
   {
+    "slug": "docker-registry-ui",
+    "logo": "logo.png",
+    "name": "Docker Registry User Interface",
+    "description": "Docker Registry 2.0 is a powerful application designed to store and distribute Docker images. This project aims to provide a simple and complete user interface for your private docker registry. You can customize the interface with various options. The major option is which allows you to disable the dynamic selection of docker registeries (same behavior as the old static tag). SINGLE_REGISTRY",
+    "tags": [
+      "Developer Tools",
+      "Databases"
+    ]
+  },
+  {
     "slug": "docker-registry",
     "logo": "logo.png",
     "name": "Docker Registry",

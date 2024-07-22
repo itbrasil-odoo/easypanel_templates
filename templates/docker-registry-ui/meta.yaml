@@ -1,0 +1,101 @@
+name: Docker Registry User Interface
+description:
+  Docker Registry 2.0 is a powerful application designed to store and distribute
+  Docker images. This project aims to provide a simple and complete user
+  interface for your private docker registry. You can customize the interface
+  with various options. The major option is which allows you to disable the
+  dynamic selection of docker registeries (same behavior as the old static tag).
+  SINGLE_REGISTRY
+instructions: See github repository for more information.
+changeLog:
+  - date: 2024-07-22
+    description: first release
+links:
+  - label: Website
+    url: https://joxit.dev/docker-registry-ui
+  - label: Github
+    url: https://github.com/Joxit/docker-registry-ui
+contributors:
+  - name: Renan Teixeira
+    url: https://github.com/renanteixeira
+schema:
+  type: object
+  required:
+    - projectName
+    - appServiceName
+    - appServiceImage
+    - appUiServiceName
+    - appUiServiceImage
+    - user
+    - password
+  properties:
+    projectName:
+      type: string
+      title: Project Name
+    appServiceName:
+      type: string
+      title: App Service Name
+      default: docker-registry
+    appServiceImage:
+      type: string
+      title: App Service Image
+      default: registry:2.8.3
+    appUiServiceName:
+      type: string
+      title: App UI Service Name
+      default: docker-registry-ui
+    appUiServiceImage:
+      type: string
+      title: App UI Service Image
+      default: joxit/docker-registry-ui:2.5.7
+    user:
+      type: string
+      title: User
+      default: admin
+    password:
+      type: string
+      title: Password
+      default: admin
+benefits:
+  - title: Docker Registry User Interface
+    description:
+      The Docker Registry 2.0 app provides an efficient, secure, and reliable
+      way to store, manage, package, and exchange content. The simplest and most
+      complete UI for your private registry!
+  - title: Scalability
+    description:
+      Whether you're building a large scale registry solution or running a
+      simple private registry, Docker Registry 2.0 is designed to scale to your
+      needs. It's a core library for many registry operators, including Docker
+      Hub, GitHub Container Registry, GitLab Container Registry, and
+      DigitalOcean Container Registry.
+  - title: Security
+    description:
+      Security is a key focus of Docker Registry 2.0. The app is designed to
+      provide a secure tool chain for distributing content, ensuring that your
+      data is protected.
+features:
+  - title: Open Source Registry
+    description:
+      Docker Registry 2.0 is an open source registry implementation for storing
+      and distributing container images using the OCI Distribution
+      Specification.
+  - title: Rich Set of Libraries
+    description:
+      The app includes a rich set of libraries for interacting with distribution
+      components. These libraries provide a range of functionalities, making it
+      easier to work with the distribution components.
+  - title: HTTP Communication
+    description:
+      Clients can communicate with the registry using HTTP. This makes it easy
+      to integrate Docker Registry 2.0 with Docker, containerd, and other OCI
+      clients.
+  - title: Customization
+    description:
+      Docker Registry 2.0 is designed to be extensible, allowing users to
+      hack/roll their own on top of healthy open-source components or implement
+      their own home made solution through good specs and solid extensions
+      mechanism.
+tags:
+  - Developer Tools
+  - Databases
